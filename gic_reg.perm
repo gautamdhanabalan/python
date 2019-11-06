@@ -1,0 +1,25 @@
+# Permutation file for generating regression testlist
+
+# TB - testbench name + compile mode (if applicable)
+TbName tb                    : gic
+
+# Test - test name
+TestName test                : gic_reg_test
+
+# Active PEs
+TestMode pe                  : pe0; allpe
+
+# Execution state
+TestMode exe_state           : ; a64; a32;
+
+# Register
+TestMode reg                 : sre; igrpen; iar; pmr; bpr; bpr+cbpr_rnd; ctlr; lr; maint+no_sb
+
+# Test length
+TestMode length              : ; long
+
+# Number of seeds to run
+SimSeed iterations           : x2
+
+# Permutations
+Permute tb test pe exe_state reg length iterations
