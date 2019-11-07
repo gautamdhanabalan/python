@@ -13,7 +13,7 @@ TestMode pe                  : pe0; allpe
 TestMode exe_state           : ; a64; a32;
 
 # Register
-TestMode reg                 : sre; igrpen; iar; pmr; bpr; bpr+cbpr_rnd; ctlr; lr; maint+no_sb
+TestMode reg                 : sre; fmr; igrpen; iar; pmr; bpr; bpr+cbpr_rnd; ctlr; lr; maint+no_sb
 
 # Test length
 TestMode length              : ; long
